@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Study Spaces</title>
+    <link href="./style.css" type="text/css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.11/handlebars.js"></script>
+  </head>
+
+  <body>
+    <div class="nav-bar">
+      <ul>
+        <li><a href="./index.html">Home</a></li>
+        <li>Log In</li>
+        <li><a href="#footer">Contact</a></li>
+      </ul>
+    </div>
+
+    <div class="main2">
+      <script id="handlebars-script" type="text/x-handlebars-template">
+        <div class="space-banner">
+          <h2>{{spaceName}}</h2>
+          <img src="{{spacePath}}">
+        </div>
+
+        <div class="info">
+          <p>{{spaceInfo}}</p>
+        </div>
+      </script>
+      <div id="insert-handlebars-output">
+      </div>
+
+      <div id="footer">
+        <p>Created by Jeffrey Prouty</p>
+        <p>Email: jcprouty@gmail.com</p>
+        <p><a href="http://www.jeffreyprouty.com">Website</a></p>
+      </div>
+    </div>
+
+    <script src="./main.js"></script>
+  </body>
+</html>
